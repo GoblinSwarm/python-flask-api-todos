@@ -6,6 +6,12 @@ todos = [
     {"label":"My first task", "done":False}
 ]
 
+
+# @app.route('/todos', methods=['GET'])
+# def hello_world():
+#     return "<h1>Hello!</h1>"
+
+
 @app.route('/todos', methods=['GET'])
 def hello_world():
     json_text = jsonify(todos)
